@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Team"
+        android:textSize="30sp"
+        android:padding="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="60dp"
+        android:layout_marginLeft="22dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTeam"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/cardImageTwo"
+
+        >
+    <ImageView
+        android:id="@+id/ImgOne"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_one"
+
+        />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTeam"
+        app:layout_constraintRight_toLeftOf="@id/cardImageThree"
+        app:layout_constraintLeft_toRightOf="@id/cardImage"
+>
+
+
+        <ImageView
+            android:id="@+id/ImgTwo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_two"
+
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTeam"
+        app:layout_constraintLeft_toRightOf="@id/cardImageTwo"
+        app:layout_constraintRight_toRightOf="parent"
+
+        >
+        <ImageView
+            android:id="@+id/ImgThree"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_three"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtAdam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Adam D "
+        android:textSize="15sp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtBetty"
+        app:layout_constraintTop_toBottomOf="@id/cardImage"
+
+        />
+
+    <TextView
+        android:id="@+id/txtBetty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Betty L"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/cardImageTwo"
+        app:layout_constraintRight_toLeftOf="@id/txtRob"
+        app:layout_constraintLeft_toRightOf="@id/txtAdam"
+
+        />
+    <TextView
+        android:id="@+id/txtRob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roberts"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/cardImageThree"
+        app:layout_constraintLeft_toRightOf="@id/txtBetty"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/txtOfficer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Executive Officer"
+        android:textSize="15sp"
+
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txtAdam"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtMarketing"
+
+        />
+    <TextView
+        android:id="@+id/txtMarketing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marketing"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/txtBetty"
+        app:layout_constraintRight_toLeftOf="@id/txtBusiness"
+        app:layout_constraintLeft_toRightOf="@id/txtOfficer"
+
+        />
+    <TextView
+        android:id="@+id/txtBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Analysis"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/txtRob"
+        app:layout_constraintLeft_toRightOf="@id/txtMarketing"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="60dp"
+
+        app:layout_constraintTop_toBottomOf="@id/txtOfficer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cardImageFive"
+
+        >
+        <ImageView
+            android:id="@+id/ImgFour"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_four"
+
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintTop_toBottomOf="@id/txtMarketing"
+        app:layout_constraintRight_toLeftOf="@id/cardImageSix"
+        app:layout_constraintLeft_toRightOf="@id/cardImageFour"
+        >
+
+
+        <ImageView
+            android:id="@+id/ImgFive"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_five"
+
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintTop_toBottomOf="@id/txtBusiness"
+        app:layout_constraintLeft_toRightOf="@id/cardImageFive"
+        app:layout_constraintRight_toRightOf="parent"
+
+        >
+        <ImageView
+            android:id="@+id/ImgSix"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_six"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/txtMilier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Milier W"
+        android:textSize="15sp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtKevin"
+        app:layout_constraintTop_toBottomOf="@id/cardImageFour"
+
+        />
+
+    <TextView
+        android:id="@+id/txtKevin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kevin John"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/cardImageFive"
+        app:layout_constraintRight_toLeftOf="@id/txtLeura"
+        app:layout_constraintLeft_toRightOf="@id/txtMilier"
+
+        />
+    <TextView
+        android:id="@+id/txtLeura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leura M"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/cardImageSix"
+        app:layout_constraintLeft_toRightOf="@id/txtKevin"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/txtDesigner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="UX Designer"
+        android:textSize="15sp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtDeveloper"
+        app:layout_constraintTop_toBottomOf="@id/txtMilier"
+
+        />
+
+    <TextView
+        android:id="@+id/txtDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Web Developer"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/txtKevin"
+        app:layout_constraintRight_toLeftOf="@id/txtMobile"
+        app:layout_constraintLeft_toRightOf="@id/txtDesigner"
+
+        />
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Dev"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/txtLeura"
+        app:layout_constraintLeft_toRightOf="@id/txtDeveloper"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/txtMission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mission"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtDesigner"
+
+        />
+
+    <TextView
+        android:id="@+id/txtWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am Khin.I am Khin.I am Khin.I am Khin.I am Khin.I am Khin.I am Khin.I am Khin.I am Khin.I am Khin.I am Khin. I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin I am Khin "
+        android:textSize="15sp"
+        android:padding="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMission"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
